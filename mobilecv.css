@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+   background-color: rgb(44, 36, 66);
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    
+}
+
+[class*="col-"]{
+    padding: 10px;
+    float: left;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.main-div{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+   
+}
+.div1{
+    box-shadow:  2px 4px 4px 4px teal;
+    background-color: whitesmoke;
+}
+.image-div{
+    border:5px tomato;
+    background-color: whitesmoke;
+    padding: 10px;  
+}
+.image-div img{
+    height: 600px;
+    margin-top: 5px;
+    border:2px solid lightgreen;
+    border-radius: 35px;
+    box-shadow: 0px 5px 5px 5px lightgreen;
+    transition: transform 4s;
+    transition-timing-function: linear;
+   
+}
+.image-div img:hover{
+    transform: rotateX(30deg);
+ }
+
+.image-div h1{
+    color: rgb(236, 16, 16);
+    margin-top: 30px;
+    text-shadow: 10px 5px 5px rgb(204, 119, 119);
+    font-size: 35px;
+}
+
+.title{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 20px; 
+   color: rgb(74, 77, 77);
+}
+.title i{
+    margin-right: 20px;
+    color: teal;
+  
+}
+
+.underline{
+    width: 350px;
+    border: 2px solid teal;
+}
+.skill-logo{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.skill-logo i{
+    margin-right: 20px;
+    color: teal;
+}
+/* Skill list design */
+.skill-list li{
+    list-style: none;
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(74, 77, 77);
+    margin: 40px 0px;
+    position: relative;
+    font-size: 25px;
+}
+.skill-list li::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(126, 128, 128, 0.116);
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    top: 30px;
+    left: 0px;
+  
+}
+.skill-list li::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(70, 146, 151);
+    width:0px;
+    height: 30px;
+    top: 30px;
+    left: 0px;
+    border-radius: 20px;
+    color: white;
+    text-align: end;
+    font-size: 25px;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.skill-list li.l1::after{
+    animation-name: c;
+}
+.skill-list li.l2::after{
+    animation-name: java;
+}
+.skill-list li.l3::after{
+    animation-name: html;
+}
+.skill-list li.l4::after{
+    animation-name: css;
+}
+.skill-list li.l5::after{
+    animation-name: aad;
+}
+.skill-list li.l6::after{
+    animation-name: ar;
+}
+.skill-list li.l7::after{
+    animation-name: pic;
+}
+.skill-list li.l8::after{
+    animation-name: dart;
+}
+@keyframes c{
+    to{
+        width: 80%;
+        content: 'Not Interested...';
+    }
+}
+@keyframes java{
+    to{
+        width: 50%;
+        content: 'OOP';
+    }
+}
+@keyframes html{
+    to{
+        width: 100%;
+       content: 'Learning...';
+    }
+}
+@keyframes css{
+    to{
+        width: 100%;
+        content: 'Learning...';
+    }
+}
+@keyframes ar{
+    to{
+        width: 70%;
+        content: 'Learning...';
+    }
+}
+@keyframes pic{
+    to{
+        width: 40%;
+        content: 'Learning...';
+    }
+}
+@keyframes dart{
+    to{
+        width: 50%;
+        content: 'OOP...';
+    }
+}
+
+.skill-list li.la1::after{
+    animation-name: bangla;
+}
+.skill-list li.la2::after{
+    animation-name: english;
+}
+@keyframes bangla{
+    to{
+        width: 100%;
+        content: 'My language';
+        text-align: center;
+    }
+}
+@keyframes english{
+    to{
+        width: 50%;
+        content: 'Hate this';
+    }
+}
+
+.education{
+   padding-top: 10px;
+    background-color: whitesmoke;
+    box-shadow:  2px 4px 4px 4px teal;
+    margin-top: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+    
+}
+
+.eduline{
+    border: 1px solid teal;
+    width: 450px;
+}
+.education-list {
+    padding-left: 20px;
+    color: rgb(74, 77, 77)
+}
+.calender i{
+    margin-right: 20px;
+    color: rgb(14, 212, 212);  
+}
+.main-div::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer-body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.last-div{
+    background-color: teal;
+    
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.link{
+    padding-bottom: 20px;
+
+}
+.link i{
+    font-size: 25px;
+    padding: 10px;
+}
+.link a{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.certificate{
+     margin-left: 10px;
+     padding-top: 5px;
+     background-color: whitesmoke;
+     box-shadow:  2px 4px 4px 4px teal;
+     padding-right: 20px;
+     padding-left: 20px;
+     text-align: left;  
+     margin-top: 20px; 
+ }
+ img {
+    vertical-align:middle;
+    width: 100%;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+   .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+   .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(12, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+ .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(248, 245, 245, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+ .numbertext {
+    color: #000000;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+ .demo {
+    opacity: 1;
+  }
+  
+.active,
+.demo:hover {
+    opacity: 10;
+  }
+  .work h1{
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+    
+      font-style: italic;
+      text-shadow: 10px 5px 5px rgb(231, 35, 35);
+      
+  }
+ .work .work-slide{
+     margin: 15px;
+     
+ }
+
+ .work .work-slide img:hover{
+
+    box-shadow: 0px,2px,3px.4px solid rgb(30, 188, 216) ;
+ }

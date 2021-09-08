@@ -1,0 +1,90 @@
+.certificate img {
+    vertical-align:middle;
+    width: 100%;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .certificate .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .certificate .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .certificate .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .certificate .prev,
+  .certificate .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(12, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .certificate .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .certificate .prev:hover,
+  .certificate .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(248, 245, 245, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .certificate .numbertext {
+    color: #0e0202;
+    font-size: 20px;
+    
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .certificate .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .certificate .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .certificate.column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .certificate .demo {
+    opacity: 1;
+  }
+  
+  .certificate .active,
+  .certificate.demo:hover {
+    opacity: 10;
+  }
+
+  
